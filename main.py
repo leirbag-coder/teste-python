@@ -1,3 +1,4 @@
+"""
 print("olá mundo")
 nome = input("qual seu nome ?")
 idade = int(input("qual sua idade?"))
@@ -12,7 +13,7 @@ elif idade >= 18:
     maioridade = "Maior ou igual de 18 anos!"
 else:
     maioridade = "Menor de 18 anos!"    
-"""
+
 def somar(a,b):
     return a + b 
 print(f"o resultado da conta a + b = {somar(a,b)}")
@@ -25,5 +26,11 @@ for i in range(5):
 """
 
 frutas = ["Maçã", "Banana", "Uva"]
+
+
+frutas.append("pera")       # Adiciona um item ao final
+frutas.remove("Banana")     # Remove um item específico
+frutas.insert(1, "laranja") # Adiciona em uma posição específica
+print(len(frutas))          # Quantos itens tem na lista
 for frutas in frutas:
     print("Eu gosto de ", frutas)
